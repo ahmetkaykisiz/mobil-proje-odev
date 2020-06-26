@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="FilmBase"
+        android:textSize="48sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tüm filmler elinizin altında !"
+        android:textAlignment="center" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:hint="Anahtar Kelime"
+        app:hintTextColor="@color/colorGrey"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox" >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/activity_main_edt_arama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:inputType="textAutoComplete"
+            android:textColor="@color/colorGrey"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/activity_main_btn_ara"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginTop="12dp"
+        android:text="ARA"
+        android:backgroundTint="@color/colorGrey"/>
+
+</LinearLayout>
